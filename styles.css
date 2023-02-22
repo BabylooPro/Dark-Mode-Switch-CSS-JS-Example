@@ -1,0 +1,38 @@
+:root {
+  	/* primary */
+	--backgroundColor: #fff;
+	--backgroundColor-dark: #333;
+	--textColor: #333;
+	--textColor-dark: #fff;
+
+	/* BUTTON */
+	--greyColor: #dedede;
+	--backgroundColor-dark-button: #444;
+
+}
+
+.dark-mode {
+	--backgroundColor: var(--backgroundColor-dark);
+	--textColor: var(--textColor-dark);
+}
+
+body {
+	background-color: var(--backgroundColor);
+	color: var(--textColor);
+}
+
+button {
+	background-color: var(--greyColor);
+	color: var(--textColor);
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+}
+
+@media (prefers-color-scheme: dark){
+	.dark-mode button{
+		background-color: var(--backgroundColor-dark-button);
+		color: var(--textColor-dark);
+	}
+}
