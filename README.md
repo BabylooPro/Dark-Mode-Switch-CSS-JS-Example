@@ -1,2 +1,1 @@
-Example dark or light mode switch 
-With save data in local storage of navigator
+Example dark or light mode switch with save data in local storage of navigator
